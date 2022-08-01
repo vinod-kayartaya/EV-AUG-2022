@@ -123,3 +123,48 @@
     -   Limited scope for failure
     -   Cost effective
     -   High data transfer - upto and excess of 100Mbps
+
+# Transmission modes
+
+-   Is the way in which data is transmitted from one node to another node in the network
+-   a.k.a. Communication mode
+-   A transmission media (such as cable) provide a direction of communication
+    -   the transmission mode is a directional mode
+
+Based on the direction, transmission modes can be categorized into:
+
+1. Simplex mode
+1. Half duplex mode
+1. Full duplex mode
+
+![](./images/transmission-modes.dio.png)
+
+# Computer network models
+
+-   ISO brought out some standards as how a software can be developed that can utilize the hardware and perform network activities
+-   Layered architecture
+-   Divides the networking concepts into smaller pieces
+-   Basic elements in any layered architecture consists of:
+    -   Service: Set of actuibs that a layer provides to the higher layer
+    -   Protocol: Defines a set of rules that a layer use to exchange information with the peer entity. Mainly concerned about the content and the order.
+    -   Interface: Way in which message is transferred from one layer to another layer
+-   OSI reference layer
+    -   Open System Interconnection Reference Model
+-   TCP/IP
+
+# OSI
+
+-   Defines the workflow of network activities using 7 layers
+-   These layers are going to be part of some softwares including OS, Drivers, and Applications (like browsers or email clients)
+
+![](./images/osi.dio.png)
+
+# Assignment for Day-1
+
+-   Write your understanding of the following:
+    1. A brief history of computer networking
+    1. Different components involved in a computer networking
+    1. Different topologies
+    1. Different layers of OSI model
+
+Please write your answers in a plain paper, take pictures of the same using your smartphone, convert them into a PDF document (using Adobe Scan mobile app) and upload the same into the shared drive. There is a folder for submission of assignments (Networking -> Assignments -> Submissions). Name your file in the format EMPNO_FIRSTNAME_LASTNAME.pdf (eg. 9876_VINOD_KUMAR.pdf).
