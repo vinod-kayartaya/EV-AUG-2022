@@ -168,3 +168,12 @@ Based on the direction, transmission modes can be categorized into:
     1. Different layers of OSI model
 
 Please write your answers in a plain paper, take pictures of the same using your smartphone, convert them into a PDF document (using Adobe Scan mobile app) and upload the same into the shared drive. There is a folder for submission of assignments (Networking -> Assignments -> Submissions). Name your file in the format EMPNO_FIRSTNAME_LASTNAME.pdf (eg. 9876_VINOD_KUMAR.pdf).
+
+# References
+
+1. https://www.inetdaemon.com/tutorials/networking/
+1. https://networkencyclopedia.com/what-is-networking/
+1. https://networkencyclopedia.com/history-of-networking/
+1. https://networkencyclopedia.com/7-layers-osi-model/
+1. https://amzn.to/3zlPXtE
+1. https://www.youtube.com/watch?v=TNQsmPf24go
