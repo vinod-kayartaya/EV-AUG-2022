@@ -176,3 +176,5 @@ Please write your answers in a plain paper, take pictures of the same using your
 1. https://networkencyclopedia.com/history-of-networking/
 1. https://networkencyclopedia.com/7-layers-osi-model/
 1. https://www.youtube.com/watch?v=TNQsmPf24go
+
+~
