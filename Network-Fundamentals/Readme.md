@@ -182,6 +182,7 @@ Please write your answers in a plain paper, take pictures of the same using your
 1. Types of network
 1. TCP/IP
 1. Structure of a IP header
+1. IPv4 addressing mechanism and classes of addresses
 1. Various protocols
 1. In depth coverage of HTTP protocol
 
