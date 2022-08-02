@@ -177,4 +177,57 @@ Please write your answers in a plain paper, take pictures of the same using your
 1. https://networkencyclopedia.com/7-layers-osi-model/
 1. https://www.youtube.com/watch?v=TNQsmPf24go
 
-~
+# Day 2
+
+1. Types of network
+1. TCP/IP
+1. Structure of a IP header
+1. Various protocols
+1. In depth coverage of HTTP protocol
+
+## Types of network
+
+-   PAN (Personal Area Network)
+    -   Confined to an individual person or a family with in a range of 10-15 meters
+    -   Uses Router for connecting all devices (laptops, tablets, smartphones, TV etc.)
+-   LAN (Local Area Network)
+    -   Confined to a smaller area such as a building or an office
+    -   Used for connecting two or more computers through communication media such as coaxial or twisted pair with hub or switches etc
+    -   realtively inexpensive
+    -   good data transfer rate
+    -   some level of security
+-   MAN (Metropolitan Area Network)
+    -   Covers larger geographical area
+    -   with in a city
+    -   offices spread across a town
+-   WAN (Wide Area Network)
+    -   covers larger than MAN in terms geographical distance
+    -   across cities, states and countries
+    -   Depend on satellites
+    -   Mostly used by business and governments
+
+## TCP/IP Model
+
+-   Was developed prior to OSI model
+-   Similar to OSI model
+-   Consists of 5 layers
+    -   Application, Transport, Network, Data link, Physical
+
+![](./images/tcpip.dio.png)
+
+-   Version: Version number of IP used (for IPv4 --> 4)
+-   IHL: Internet Header Lenghth; length of the entire IP header
+-   DSCP: Differenciated Services Code Point; Type of Service
+-   ECN: Explicit Congestion Notification; carries info about any possible congestion seen en-route
+-   Total length: Length of the entire IP packet inlcuding the header and the payload
+-   Identification number: If a packet is broken (fragmented) during the transmission, all the fragments contain same ID number, to identify the original IP packet they belong to
+-   Flags: Indicator for a packet being fragmented or not
+-   Fragment offset: tells the exact position of the fragment relative to the packet (required for re-assembling)
+-   TTL (Time to live): To avoid looping in the network, each packet is assigned with some TTL value, which tells the network, how many hops the packet can cross, before being removed from the network.
+-   Protocol: tells the network layer at the destination, to which protocol this packet belongs to
+    -   https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml
+-   Header checksum: to verify if the header is corrupted or not
+-   Source address: 32 bit address of the sender
+-   Destination address: 32 bit address of the receiver
+-   Options: An optional field. May contain information about security, record route, timestamp etc
+-   Payload: The actual message/data being transmitted. 0 to 65535 bytes in length.
