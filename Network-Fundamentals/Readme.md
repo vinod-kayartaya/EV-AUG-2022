@@ -353,7 +353,7 @@ Categorized into 5 Classes
 
 Sample HTTP request
 
-```http
+```
 GET /api/contacts/6c9ab75e-45de-41f0-bf93-e8f445fb42b1
 Host: vin-contact-service.herokuapp.com
 Accept: application/xml
@@ -365,7 +365,7 @@ Accept: application/xml
 
 Sample HTTP response
 
-```http
+```
 HTTP/1.1 200
 Server: Cowboy
 Connection: close
