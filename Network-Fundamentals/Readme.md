@@ -347,13 +347,45 @@ Categorized into 5 Classes
     - Client are typicall browsers, postman, insomnia, a program written in Java/Python etc
     - Created by Roy Fielding
 
-
 ### What does a HTTP request look like?
 
 ![](./images/http-request.dio.png)
 
+Sample HTTP request
+
+```http
+GET /api/contacts/6c9ab75e-45de-41f0-bf93-e8f445fb42b1
+Host: vin-contact-service.herokuapp.com
+Accept: application/xml
+```
 
 ### What does a HTTP response look like?
 
 ![](./images/http-response.dio.png)
 
+Sample HTTP response
+
+```http
+HTTP/1.1 200
+Server: Cowboy
+Connection: close
+Content-Type: application/xml
+Transfer-Encoding: chunked
+Date: Tue, 02 Aug 2022 07:42:52 GMT
+Via: 1.1 vegur
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contact>
+  <id>6c9ab75e-45de-41f0-bf93-e8f445fb42b1</id>
+  <firstname>Vinod</firstname>
+  <lastname>Kumar</lastname>
+  <gender>Male</gender>
+  <email>vinod.kumar@xmpl.com</email>
+  <phone>4042669999</phone>
+  <address>ISRO Layout</address>
+  <city>Bangalore</city>
+  <state>Karnataka</state>
+  <country>India</country>
+  <pincode>50078</pincode>
+</contact>
+```
