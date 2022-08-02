@@ -359,6 +359,29 @@ Host: vin-contact-service.herokuapp.com
 Accept: application/xml
 ```
 
+Another with POST request
+
+```
+POST /api/contacts
+Host: vin-contact-service.herokuapp.com
+Accept: application/xml
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contact>
+  <firstname>Vinod</firstname>
+  <lastname>Kumar</lastname>
+  <gender>Male</gender>
+  <email>vinod.kumar@xmpl.com</email>
+  <phone>4042669999</phone>
+  <address>ISRO Layout</address>
+  <city>Bangalore</city>
+  <state>Karnataka</state>
+  <country>India</country>
+  <pincode>50078</pincode>
+</contact>
+```
+
 ### What does a HTTP response look like?
 
 ![](./images/http-response.dio.png)
