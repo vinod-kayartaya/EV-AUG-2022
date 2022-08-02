@@ -412,3 +412,11 @@ Via: 1.1 vegur
   <pincode>50078</pincode>
 </contact>
 ```
+
+# Assignment for Day-2
+
+-   Write your understanding of the following:
+    -   IP Packet structure
+    -   IP v4 Address Classes
+    -   Different types of computer networks
+    -   Protocols - SMTP, SNMP, FTP, and HTTP
