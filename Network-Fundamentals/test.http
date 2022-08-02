@@ -1,0 +1,46 @@
+GET /wiki/Tiger HTTP/1.1
+Host: en.wikipedia.org
+Accept: text/html
+
+###
+
+GET /products/12
+Host: vinbasket.herokuapp.com
+
+###
+
+GET /api/contacts/8ddb7fcf-0a7a-4eeb-a78f-13238ed85a77
+Host: vin-contact-service.herokuapp.com
+
+###
+
+GET /api/contacts/8ddb7fcf-0a7a-4eeb-a78f-13238ed85a77
+Host: vin-contact-service.herokuapp.com
+Accept: application/xml
+
+###
+
+POST /api/contacts
+Host: vin-contact-service.herokuapp.com
+Accept: application/xml
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contact>
+  <firstname>Vinod</firstname>
+  <lastname>Kumar</lastname>
+  <gender>Male</gender>
+  <email>vinod.kumar@xmpl.com</email>
+  <phone>4042669999</phone>
+  <address>ISRO Layout</address>
+  <city>Bangalore</city>
+  <state>Karnataka</state>
+  <country>India</country>
+  <pincode>50078</pincode>
+</contact>
+
+###
+
+GET /api/contacts/6c9ab75e-45de-41f0-bf93-e8f445fb42b1
+Host: vin-contact-service.herokuapp.com
+Accept: application/xml

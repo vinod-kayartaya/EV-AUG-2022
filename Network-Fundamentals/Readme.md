@@ -287,3 +287,73 @@ Categorized into 5 Classes
     -   (self learning)
 -   Class E
     -   (self learning)
+
+## Application Protocols
+
+1. DNS
+
+    - Domain Name System
+    - is a directory service that provides a mapping between the name of the host and the network IP
+    - TLD (Top Level Domains) Registrars
+        - com (commercial)
+        - edu (educational)
+        - org (organizations)
+        - info (informative)
+        - gov (government)
+        - co (company)
+            - in (India)
+            - us (USA
+            - uk etc
+        - biz (business)
+        - io (more software oriented like framework)
+        - ai (artificial intelligence)
+    - ![](./images/dns.dio.png)
+
+1. FTP (File transfer protocol)
+    - Used for upload/download files
+    - Your computer is considered as a client and the other computer is considered as server
+    - Most popular tools include Filzilla, ForkLift, Transmit, WinSCP etc
+1. Telnet
+
+    - Terminal network
+    - Telnet is an application protocol used on the Internet or local area network to provide a bidirectional interactive text-oriented communication facility using a virtual terminal connection
+    - local terminal (or command prompt in MS-Windows) appears to be a terminal of the remote computer
+
+1. SMTP
+
+    - Simple Mail Transfer Protocol
+    - Application protocol based on TCP/IP
+    - Sending emails to various/any email service providers
+
+1. POP
+
+    - Post Office Protocol
+    - Receiver of emails
+
+1. SNMP
+
+    - Simple Network Management Protocol
+    - Allows to monitor, manage networks
+    - Tools are there built around this protocol
+
+1. HTTP
+    - Hyper Text Transfer Protocol
+    - Hypertext is a text that may contain links to other hypertext
+    - Default protocol used by WWW (so called white web)
+    - A secured version of the same exists and called as HTTPS
+    - Can exchange text/image/video/pdf etc in plain text format
+    - Based on request-response model
+    - Client always sends a **request** and the server receives the same, processes and the sends a **response** back
+    - Client are typicall browsers, postman, insomnia, a program written in Java/Python etc
+    - Created by Roy Fielding
+
+
+### What does a HTTP request look like?
+
+![](./images/http-request.dio.png)
+
+
+### What does a HTTP response look like?
+
+![](./images/http-response.dio.png)
+
