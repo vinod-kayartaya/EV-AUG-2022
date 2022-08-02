@@ -232,3 +232,58 @@ Please write your answers in a plain paper, take pictures of the same using your
 -   Destination address: 32 bit address of the receiver
 -   Options: An optional field. May contain information about security, record route, timestamp etc
 -   Payload: The actual message/data being transmitted. 0 to 65535 bytes in length.
+
+## IPv4 Addressing
+
+-   supports 3 types of addressing modes
+    1. Unicast addressing mode
+        - Data is sent to only one destined host
+        - Destination address field (in the IP header) contains the 32-bit address of the destination
+        - Client sends data to the targeted server
+        - ![](./images/unicast.dio.png)
+    1. Broadcast addressing mode
+        - The packet is addressed to all the hosts in the network segment
+        - The destination address field contains a special broadcast address (255.255.255.255)
+        - When a host/server sees the packet on the network, it is supposed to process the same
+        - The client sends the packet
+        - ![](./images/broadcast.dio.png)
+    1. Multicast addressing mode
+        - combination of unicast and broadcast modes
+        - destination address field contains a special address (224.x.x.x)
+        - neither destined to a single host nor all the hosts
+        - can be processed by more than one hosts/servers
+        - ![](./images/multicast.dio.png)
+
+### Hierarchical Addressing Scheme
+
+-   The address field contains 4 different bytes, which represent networks and hosts
+-   ![](./images/address.dio.png)
+
+### IPv4 Address classes
+
+Categorized into 5 Classes
+
+-   Class A
+    -   1st bit in the 1st octet is always 0
+    -   which means you have only 7 bits for representing a number
+    -   include 1.x.x.x to 126.x.x.x
+    -   default subnet mask is 255.0.0.0
+    -   maximum number of networks possible is 126
+    -   address format for this class: 0nnnnnnn.nnnnnnnn.nnnnnnnn.nnnnnnnn
+-   Class B
+    -   1st two bits of the 1st octet is "10"
+    -   address format for this class: 10nnnnnn.nnnnnnnn.nnnnnnnn.nnnnnnnn
+    -   128 to 191
+    -   128.x.x.x to 191.x.x.x
+    -   Can represent up to 16384 networks and 65534 hosts
+-   Class C
+    -   1st 3 bits of the 1st octet = "110"
+    -   11000000 to 11011111
+    -   192 to 223
+    -   192.x.x.x to 223.x.x.x
+    -   address format for this class: 110nnnnn.nnnnnnnn.nnnnnnnn.nnnnnnnn
+    -   up to 2^21 (2097152) networks and 254 hosts in each network (overall 532676608)
+-   Class D
+    -   (self learning)
+-   Class E
+    -   (self learning)
