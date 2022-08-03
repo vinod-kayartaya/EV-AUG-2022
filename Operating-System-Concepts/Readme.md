@@ -172,3 +172,13 @@
     -   a high priority process comes to the ready state
     -   an interrupt occur
     -   a preemptive CPU scheduling is used
+
+# Assignment for Day 1
+
+Do a bit of research about CPU scheduling and address the following tasks:
+
+1. Write about CPU Scheduling in Operating Systems
+1. What are the different types of CPU Scheduling Algorithms?
+1. Explain in detail about Round Robin Scheduling Algorithm
+
+As in the past, please write your content on a paper, and submit the PDF version of the same in the submission folder.
