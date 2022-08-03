@@ -1,0 +1,21 @@
+# OS Fundamentals
+
+-   Introduction
+-   UNIX Architecture
+-   Logging In
+-   Files and Directories
+-   Input and Output
+-   Programs and Processes
+-   Error Handling
+-   User Identification
+-   Time Values
+-   System Calls and Library Functions
+-   Memory Layout
+-   Call Stack
+-   CPU Scheduling
+-   NullReferenceException
+-   Organize the code into Header and Source files
+-   Understanding Memory allocations, Heap Memory Management, Memory Leaks. GC  – Sample code with C++,Java
+-   Stack Memory, Stack overflow, Stack Corruption, Stack Registers – Sample code with C++,Java
+-   Paging Concepts and Page Tables
+-   Static and Dynamic Libraries and Linking
