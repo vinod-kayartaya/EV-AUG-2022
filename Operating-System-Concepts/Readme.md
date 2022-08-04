@@ -213,6 +213,8 @@ As in the past, please write your content on a paper, and submit the PDF version
     -   ![](./images/heap.dio.png)
     -   ![](./images/memoryleak.dio.png)
 -   Code segment
+    -   The actual binary code of the program is loaded into this section of the memory
+    -   OS starts from the entrypoint (like main()) and executes (gives to CPU)
 -   Registers (memory inside the CPU)
 
 ## Recursion
@@ -221,3 +223,53 @@ As in the past, please write your content on a paper, and submit the PDF version
 -   Stack gets loaded with stack-frames of similar types, but with different values
 -   At some point in time, we have to ensure that there is no more stack-frame PUSHed to the stack
 -   ![](./images/recursion.dio.png)
+-   If such a terminating condition is not used, then this will result into a scenario where the stack runs out of space, and cannot load any more stack-frames. This is called STACK-OVERFLOW. Because of this, the application will crash.
+
+# Basic Linux/Unix comamnds:
+
+-   pwd
+    -   print working directory
+    -   lets you know where you are currently
+-   whoami
+    -   displays the username of the currently logged in user
+-   clear
+    -   clears the console/display
+    -   Control + K
+    -   Control + L
+    -   Command + K
+-   cd
+
+    -   change directory
+    -   `cd` without any directory name will always switch to your home directory (every user is given the default directory after login)
+    -   `cd /` takes you to the root directory, where all other directories and subdirectory (and/or files) exist
+    -   `cd /home` takes you to a directory called `home` under the root directory
+
+-   ls - list (directory content)
+
+    -   `ls` displays the files and folders in the current directory
+    -   `ls /home` displays the files and directories in the given (/home) directory
+    -   `ls -l` (stands for long listing) displays more details about a file/directory in multi-column format
+        -   column 1 -> 1st letter indicates the nature of the file (file or directory or link etc)
+        -   column 1 -> next 9 letters grouped as 3 letters indicate the permissions (r-read, w-write, x-execute)
+            -   group 1 is for the user (rwx means that the user has all permissions on their own files)
+            -   group 2 is for the group member (r-- means the my group members can only read my files)
+            -   group 3 is for everybody else (others)
+        -   column 2 -> number of links
+        -   column 3 -> the name of the user who owns the file
+        -   column 4 -> group name to which the file belongs to
+        -   column 5 -> size of the file
+        -   column 6 -> Month Day hour:minute (file creation date/time)
+        -   column 7 -> name of the file (everything in unix is a file, such as directory, devices, users, etc)
+
+    Sample output of `ls -l /`
+
+```sh
+lrwxrwxrwx   1 root root     7 Apr 23  2020 bin -> usr/bin
+drwxr-xr-x   3 root root  4096 Apr 18 07:49 boot
+drwxr-xr-x   2 root root  4096 Apr 26  2020 cdrom
+drwxr-xr-x  18 root root  4080 Aug  4 09:06 dev
+drwxr-xr-x 149 root root 12288 May 31 16:38 etc
+-rw-r--r--   1 root root    29 Mar 22 15:01 f1
+-rw-r--r--   1 root root     9 Mar 22 15:03 f2
+-rw-r--r--   1 root root    38 Mar 22 15:04 f3
+```
