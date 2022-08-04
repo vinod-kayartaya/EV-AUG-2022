@@ -273,3 +273,12 @@ drwxr-xr-x 149 root root 12288 May 31 16:38 etc
 -rw-r--r--   1 root root     9 Mar 22 15:03 f2
 -rw-r--r--   1 root root    38 Mar 22 15:04 f3
 ```
+
+-   rm
+
+    -   removes the files/directories
+    -   use `-rf` to remove forcefully the non-empty directories (irreversible)
+
+-   tree
+    -   ubuntu (and few other linux) command
+    -   displays the files and folders in a visual tree style
