@@ -214,3 +214,10 @@ As in the past, please write your content on a paper, and submit the PDF version
     -   ![](./images/memoryleak.dio.png)
 -   Code segment
 -   Registers (memory inside the CPU)
+
+## Recursion
+
+-   A fucnction calling/invoking itself
+-   Stack gets loaded with stack-frames of similar types, but with different values
+-   At some point in time, we have to ensure that there is no more stack-frame PUSHed to the stack
+-   ![](./images/recursion.dio.png)
