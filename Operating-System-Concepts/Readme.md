@@ -182,3 +182,35 @@ Do a bit of research about CPU scheduling and address the following tasks:
 1. Explain in detail about Round Robin Scheduling Algorithm
 
 As in the past, please write your content on a paper, and submit the PDF version of the same in the submission folder.
+
+# Memory Management by OS
+
+-   Whenever an application/program is run, it becomes a process
+-   Every program maintains some amount of data (in the form of variables)
+-   Every variable occupies certain amount of memory in RAM
+-   The compilers while translating the source code into the machine code can determine how much of RAM is required by the program
+    -   This excludes
+        -   memory required by the program dynamically
+        -   issues such as memory leak and dangling pointers
+-   So, when the program becomes a process, OS must reserve some space in RAM for that process
+-   OS should ensure that memory reserved by one process is not being overwritten by another process
+
+## Different types of memory required by a program
+
+-   Stack
+    -   Typically a program is divided in to functions (procedures/subroutines)
+    -   Variable declared as part of a function (arguments and variables with in the function's body) are known as stack variables
+    -   During the execution of a program, creates a stack-frame for a function being executed, and loads the same into a data structure called STACK
+        -   main() is the first function to be executed, and hence this is at the bottom of the stack
+        -   a function called with in the main(), say foo() is going to be the next stack-frame in the stack, on top of main()
+        -   if another function, say bar() is called from with in foo(), then another stack-frame for bar() is PUSHed to the stack, and this goes on.
+    -   ![](./images/stack.dio.png)
+-   Heap
+    -   is a place where memory can be reserved for an appliction by the OS at the runtime
+    -   For instance, malloc(), calloc() realloc() in C language ask the OS to reserver certain amount bytes in the memory
+    -   Similarly, in Java and C++ we have a keyword called **new** to the same
+    -   In C/C++ programmers have to take care of de-allocating the memory claimed, otherwise it will cause a scenario called "Memory leak"
+    -   ![](./images/heap.dio.png)
+    -   ![](./images/memoryleak.dio.png)
+-   Code segment
+-   Registers (memory inside the CPU)
