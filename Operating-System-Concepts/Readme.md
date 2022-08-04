@@ -282,3 +282,18 @@ drwxr-xr-x 149 root root 12288 May 31 16:38 etc
 -   tree
     -   ubuntu (and few other linux) command
     -   displays the files and folders in a visual tree style
+
+# Assignment for Day 2
+
+### Please do a bit of research and address the following questions:
+
+Explain the following in detail:
+
+1. the difference between Multiprogramming, multitasking, multithreading and multiprocessing
+1. the difference between 32-bit and 64-bit operating systems
+1. the **Paging** concept in Operating Systems
+1. Virtual Memory in Operating System
+1. Memory segmentation
+1. Unix file system and important directories in Unix file system
+
+_Note: Draw block diagrams where ever best needed_
